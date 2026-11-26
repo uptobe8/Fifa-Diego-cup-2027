@@ -31,3 +31,6 @@ Selector de estadio independiente de la modalidad: automático, LOW POLY Stadium
 
 ## V12
 Cuatro jugadores (Neymar PSG nuevo, con esqueleto original reducido a 13 articulaciones; clip de 5,7 s retargeteado a la pose de menú). Seis botas nuevas y originales: modelos reales, ajuste a los pies animados; en Neymar anterior se superponen debido a la malla compartida. Johan Cruyff Arena seleccionable, geometría simplificada, colores de material y césped generado. Back to Eurodance Anthem de HasenChat, MP3 aportado. No es DJ Marta. Las licencias de los archivos adjuntos se conservan donde están disponibles. Comprobar derechos antes de publicar.
+
+## V13
+Galería con imágenes de los modelos reales y previsualización 3D rotatoria de jugadores, balones, estadios y botas. Pulsa una tarjeta, gira y acerca, y confirma con ELEGIR. El último GLB de Ámsterdam es idéntico (SHA-256) al de V12, por lo que se conserva una sola opción. Las miniaturas de estadios son renderizados de las mallas optimizadas; Originales muestra un recorte de las botas de cada jugador.
