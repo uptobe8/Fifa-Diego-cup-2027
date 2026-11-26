@@ -1,0 +1,11 @@
+Model Information:
+* title:	Goalkeeper Stylized - Rig and Animation
+* source:	https://sketchfab.com/3d-models/goalkeeper-stylized-rig-and-animation-7de86f9c36f84152a777f27a73646ada
+* author:	P-Vi.Art (https://sketchfab.com/dpducphong)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Goalkeeper Stylized - Rig and Animation" (https://sketchfab.com/3d-models/goalkeeper-stylized-rig-and-animation-7de86f9c36f84152a777f27a73646ada) by P-Vi.Art (https://sketchfab.com/dpducphong) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

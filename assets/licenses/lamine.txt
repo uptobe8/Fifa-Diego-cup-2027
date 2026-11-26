@@ -1,0 +1,11 @@
+Model Information:
+* title:	LAMINE YAMAL Model
+* source:	https://sketchfab.com/3d-models/lamine-yamal-model-69084075f1d8454a90570013b00e02cd
+* author:	Shockwave7 (https://sketchfab.com/Nilefox)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "LAMINE YAMAL Model" (https://sketchfab.com/3d-models/lamine-yamal-model-69084075f1d8454a90570013b00e02cd) by Shockwave7 (https://sketchfab.com/Nilefox) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
