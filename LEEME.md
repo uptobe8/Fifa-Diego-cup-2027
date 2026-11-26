@@ -22,3 +22,6 @@ Los archivos proporcionados por el usuario conservan sus condiciones de licencia
 - Atribuciones CC BY 4.0 en assets/licenses; derechos de imagen independientes.
 
 Pruebas V9: selección y rutas de render de los tres jugadores y portero de 33 mallas, clip de 66 fotogramas, verificadas con contexto GL simulado.
+
+## V10
+Vestuario reducido a tres futbolistas (retratos renderizados a partir de sus propias mallas y texturas) y dos balones originales. Equipación original fija, música trasladada al menú. Los escenarios se han vuelto a convertir desde Stadium.obj y FutbolSahası.obj. Se conservan graderíos, estructuras y luces originales; se simplifican asientos repetidos y se eliminan porterías/objetos duplicados. Se recuperó la textura de campo original de Stadium del RAR Yeni+WinRAR; se adaptó su escala para situar el punto de penalti a 11 m. En Futbol Sahası la textura de césped externa no está incluida: se utiliza césped generado y líneas propias, con la portería original amarilla del OBJ. No es una copia visual exacta del archivo Blender.
