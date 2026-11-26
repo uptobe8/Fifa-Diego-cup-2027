@@ -34,3 +34,6 @@ Cuatro jugadores (Neymar PSG nuevo, con esqueleto original reducido a 13 articul
 
 ## V13
 Galería con imágenes de los modelos reales y previsualización 3D rotatoria de jugadores, balones, estadios y botas. Pulsa una tarjeta, gira y acerca, y confirma con ELEGIR. El último GLB de Ámsterdam es idéntico (SHA-256) al de V12, por lo que se conserva una sola opción. Las miniaturas de estadios son renderizados de las mallas optimizadas; Originales muestra un recorte de las botas de cada jugador.
+
+## V14
+Acceso obligatorio mediante Google, ficha individual, nombre editable, contraseña administrada por Google, récords, preferencias y partida sincronizados con Supabase. Temporizador con horario Europe/Madrid, cierre automático, revalidación y bloqueo si no hay conexión. Lee `ACTIVAR_V14.md` antes de desplegar. Se requiere configurar Supabase y Google OAuth: no hay modo invitado ni configuración ficticia. Las pruebas de interfaz y juego usan mocks; SQL y OAuth real quedan pendientes de configuración y comprobación. GitHub Pages no protege la descarga directa del código.

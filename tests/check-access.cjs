@@ -1,0 +1,22 @@
+const assert=require('node:assert/strict'), fs=require('node:fs'),vm=require('node:vm');
+const code=fs.readFileSync(__dirname+'/../js/access.js','utf8');
+const html=fs.readFileSync(__dirname+'/../index.html','utf8');
+const ids=new Set([...html.matchAll(/id="([^"]+)"/g)].map(m=>m[1]));
+function run({configured,opened,signed}){
+ let now=100,locked=false,init=0,frames=[],store=new Map,els=new Map,requests=[],loaded=[],handlers={};
+ const get=id=>{assert(ids.has(id),id);if(!els.has(id))els.set(id,{hidden:false,disabled:false,textContent:'',value:'',append(){},replaceChildren(){},contains(){return false}});return els.get(id)};
+ const doc={getElementById:get,createElement:()=>({append(){},set textContent(v){}}),body:{classList:{add(){locked=true},remove(){locked=false}},append(script){loaded.push(script.src);script.onload()}},addEventListener(){}};
+ const result={server_now:'2026-11-26T18:00:00Z',next_change:'2026-11-26T20:00:00Z',open:opened};
+ const auth={getSession:async()=>({data:{session:signed?{user:{id:'user-a',email:'a@example.test'}}:null}}),getUser:async()=>({data:{user:{id:'user-a'}}}),signInWithOAuth:async()=>({}),signOut:async()=>({})};
+ const client={auth,rpc:async(name,args)=>{requests.push([name,args]);return {data:name==='elite_profile'?{nickname:'Jugador',prefs:{},saved_game:null,history:[],records:{}}:name==='elite_save'?true:result}}};
+ const win={ELITE_CONFIG:configured?{url:'https://example.test',publishableKey:'example'}:{},supabase:{createClient(){init++;return client}},addEventListener(n,f){handlers[n]=f}};
+ const context={window:win,document:doc,localStorage:{getItem:k=>store.get(k),setItem:(k,v)=>store.set(k,v),removeItem:k=>store.delete(k)},performance:{now:()=>now},setInterval:f=>frames.push(f),setTimeout:()=>1,fetch:async()=>({ok:true,json:async()=>['js/game.js']}),console,URL,location:{reload(){},origin:'https://example.test',pathname:'/'}};
+ vm.runInNewContext(code,context);
+ return {win,requests,get,frames,loaded,store,isLocked:()=>locked,initialized:()=>init,advance:ms=>{now+=ms;frames[0]?.()}};
+}
+const wait=()=>new Promise(r=>setImmediate(r));
+(async()=>{let a=run({configured:false});assert(a.isLocked());assert(!a.win.EliteCloud.canPlay());assert.equal(a.initialized(),0);
+ a=run({configured:true,opened:false,signed:true});await wait();assert(a.isLocked());assert(a.get('googleLogin').disabled);assert.equal(a.loaded.length,0);assert(!a.requests.some(r=>r[0]==='elite_profile'));
+ a=run({configured:true,opened:true,signed:false});await wait();assert(a.isLocked());assert(!a.get('googleLogin').disabled);assert.equal(a.loaded.length,0);
+ a=run({configured:true,opened:true,signed:true});await wait();assert(a.win.EliteCloud.canPlay());assert(!a.isLocked());assert.deepEqual(a.loaded,['js/game.js']);assert.equal(a.win.EliteCloud.key('save'),'elite14:user-a:save');a.advance(7200001);assert(!a.win.EliteCloud.canPlay());assert(a.isLocked());
+ console.log('Access gate: missing configuration, closed hours, unauthenticated session, authenticated load, account-specific keys, and automatic cutoff passed (mock API).');})().catch(e=>{console.error(e);process.exitCode=1});
