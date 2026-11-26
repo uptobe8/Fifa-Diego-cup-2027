@@ -122,3 +122,6 @@ terms — check that repository before redistributing any of its data.
 ## Recursos V6 suministrados por el usuario
 
 professional-soccer-standing.glb: metadatos internos atribuyen a Innerscene Corp, CC0 1.0 Universal (https://creativecommons.org/publicdomain/zero/1.0/). Estadio y portería OBJ: licencia original no incluida en Recursos.zip; verificar antes de redistribuir. Los archivos de música son los facilitados por el usuario; conservar las condiciones de sus licencias originales.
+
+## V12 additions
+See amsterdam.txt, boots-collection.txt and neymar-animated.txt for source attribution. Standalone orange cleats supplied by user, source license not included. Back to Eurodance Anthem — HasenChat, user-supplied MP3 (Pixabay track 407771); review license for distribution. Retargeted Neymar animation uses rotational deltas, not the original animation file.

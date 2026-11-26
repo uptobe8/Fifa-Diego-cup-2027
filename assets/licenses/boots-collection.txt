@@ -1,0 +1,11 @@
+Model Information:
+* title:	Soccer Shoe Collection 2
+* source:	https://sketchfab.com/3d-models/soccer-shoe-collection-2-302a3faa8e5a4fd8a6e782e567ae08ab
+* author:	FredPW (https://sketchfab.com/FredPW)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Soccer Shoe Collection 2" (https://sketchfab.com/3d-models/soccer-shoe-collection-2-302a3faa8e5a4fd8a6e782e567ae08ab) by FredPW (https://sketchfab.com/FredPW) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

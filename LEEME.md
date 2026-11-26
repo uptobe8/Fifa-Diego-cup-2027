@@ -1,4 +1,4 @@
-# Elite Football 3D V9
+# Elite Football 3D V11
 
 Abre index.html en un navegador WebGL. En iPhone, la versión autónoma requiere un visor HTML compatible con JavaScript/WebGL o un alojamiento HTTPS. No es una aplicación iOS firmada.
 
@@ -25,3 +25,9 @@ Pruebas V9: selección y rutas de render de los tres jugadores y portero de 33 m
 
 ## V10
 Vestuario reducido a tres futbolistas (retratos renderizados a partir de sus propias mallas y texturas) y dos balones originales. Equipación original fija, música trasladada al menú. Los escenarios se han vuelto a convertir desde Stadium.obj y FutbolSahası.obj. Se conservan graderíos, estructuras y luces originales; se simplifican asientos repetidos y se eliminan porterías/objetos duplicados. Se recuperó la textura de campo original de Stadium del RAR Yeni+WinRAR; se adaptó su escala para situar el punto de penalti a 11 m. En Futbol Sahası la textura de césped externa no está incluida: se utiliza césped generado y líneas propias, con la portería original amarilla del OBJ. No es una copia visual exacta del archivo Blender.
+
+## V11
+Selector de estadio independiente de la modalidad: automático, LOW POLY Stadium y Futbol Sahası. La elección se guarda en preferencias locales. Se incorpora un selector de archivo de audio autorizado por el usuario: el archivo se reproduce localmente y no se sube ni se conserva tras cerrar la página. Se mantienen las dos canciones originales. No se añaden canciones de DJ Marta sin licencia verificable. No hay nuevos modelos de botas o jugadores en esta entrega.
+
+## V12
+Cuatro jugadores (Neymar PSG nuevo, con esqueleto original reducido a 13 articulaciones; clip de 5,7 s retargeteado a la pose de menú). Seis botas nuevas y originales: modelos reales, ajuste a los pies animados; en Neymar anterior se superponen debido a la malla compartida. Johan Cruyff Arena seleccionable, geometría simplificada, colores de material y césped generado. Back to Eurodance Anthem de HasenChat, MP3 aportado. No es DJ Marta. Las licencias de los archivos adjuntos se conservan donde están disponibles. Comprobar derechos antes de publicar.
