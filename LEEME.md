@@ -1,17 +1,17 @@
-# Elite Football 3D · V6
+# Elite Football 3D V8
 
-## Uso
-- En ordenador, descomprime la carpeta y abre index.html en un navegador compatible con WebGL. No requiere descargas externas.
-- La versión HTML autónoma contiene los mismos recursos de ejecución y música. En iOS requiere un navegador/visor que ejecute JavaScript y WebGL; la vista previa de Archivos no es un navegador de juego.
+Abre index.html en un navegador WebGL. En iPhone, la versión autónoma requiere un visor HTML compatible con JavaScript/WebGL o un alojamiento HTTPS. No es una aplicación iOS firmada.
 
-## Cambios
-- Nuevo futbolista texturizado obtenido de professional-soccer-standing.glb. El archivo original carece de esqueleto y animaciones; los pesos se han transferido de forma aproximada al esqueleto de la V5. Las texturas de color base se muestrean sobre los vértices. No se ha verificado visualmente la deformación.
-- Geometría adaptada del estadio y de la portería aportados; se conserva la red procedural. Balón clásico sustituido por la geometría del balón del GLB. Los otros balones mantienen su diseño anterior.
-- Siete tipos de toque, puntos flotantes, bonus de racha cada cinco toques, velocidades fácil/normal/rápido/experto, rankings por toques y puntos, persistencia de partida. Los movimientos usan las animaciones existentes; no hay siete capturas de movimiento independientes.
-- Se mantienen los dos MP3, los modos penaltis/dianas, las opciones de equipación y el efecto de balón.
-- El ZIP de recursos no contiene un modelo inequívocamente identificado como Cristiano Ronaldo. No se presenta el modelo genérico como Ronaldo.
-- No se han convertido los modelos FBX de los balones Adidas/LaLiga, la copa 3MF ni la camiseta Maya. No se ha verificado la licencia de los recursos aportados del estadio/portería; revisar antes de distribuir públicamente.
+## Controles
+- Penaltis y dianas: toca/haz clic sobre la portería para fijar el punto. Mueve el puntero al botón DISPARAR sin cambiar la puntería; mantén y suelta para ajustar potencia. La curva altera la trayectoria y mantiene el destino.
+- Toques: elige parte del cuerpo según la altura; cuatro velocidades; ranking por puntos y toques.
+- Personalización: Cristiano Ronaldo, Al Nassr original y recoloreados, LaLiga y Adidas Champions League (mallas y texturas de los FBX aportados), balones alternativos, portero, trofeo opcional y dos MP3.
+- Guardado y ranking locales al navegador.
 
-## Pruebas
-`node tests/check-game.cjs`
-Pruebas de lógica y almacenamiento ejecutadas con WebGL simulado. La navegación local del navegador de pruebas está bloqueada; el renderizado real y la compatibilidad iOS no se han certificado.
+## Recursos
+Cristiano: 9 mallas con texturas y pesos de esqueleto originales; paleta de 13 articulaciones, poses procedurales, escala 1,85 m. Modelo original incluido con aviso de licencia. Estadios OBJ adaptados a coordenadas jugables, fondos gigantes y porterías duplicadas eliminados. Soccergoal: geometría original, textura de red con alfa. Balones originales FBX convertidos a geometría con UV y texturas. Brasil: variante de colores; no es la camiseta Maya original (no está riggeada para Cristiano). Trofeo 3MF simplificado.
+
+## Verificación
+`node tests/check-game.cjs`: pruebas con contexto GL simulado, control de puntería bloqueada, destino exacto con curva, 100 puntos en diana, toques, clasificación y guardado. Retrato de Cristiano renderizado por CPU a partir de las mallas/UV/texturas importadas. Chromium del entorno no permite WebGL; escena completa y rendimiento en dispositivos reales no verificados.
+
+Los archivos proporcionados por el usuario conservan sus condiciones de licencia y derechos de imagen; revisar antes de redistribución pública.
