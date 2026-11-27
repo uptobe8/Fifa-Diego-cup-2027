@@ -1,1 +1,1 @@
-window.ELITE_CONFIG = { url: '', publishableKey: '' };
+window.ELITE_CONFIG = { url: '', publishableKey: '', adminEmail: '' };

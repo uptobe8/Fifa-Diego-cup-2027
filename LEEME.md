@@ -1,3 +1,6 @@
+# Elite Football 3D V16
+Acceso privado local sin configuración: consulta ACCESO_V16.md. El registro Google de jugadores requiere activar el servicio según ACTIVAR_V14.md. El acceso privado local solo protege el flujo normal de la interfaz; no constituye autenticación de servidor.
+
 # Elite Football 3D V11
 
 Abre index.html en un navegador WebGL. En iPhone, la versión autónoma requiere un visor HTML compatible con JavaScript/WebGL o un alojamiento HTTPS. No es una aplicación iOS firmada.
@@ -37,3 +40,6 @@ Galería con imágenes de los modelos reales y previsualización 3D rotatoria de
 
 ## V14
 Acceso obligatorio mediante Google, ficha individual, nombre editable, contraseña administrada por Google, récords, preferencias y partida sincronizados con Supabase. Temporizador con horario Europe/Madrid, cierre automático, revalidación y bloqueo si no hay conexión. Lee `ACTIVAR_V14.md` antes de desplegar. Se requiere configurar Supabase y Google OAuth: no hay modo invitado ni configuración ficticia. Las pruebas de interfaz y juego usan mocks; SQL y OAuth real quedan pendientes de configuración y comprobación. GitHub Pages no protege la descarga directa del código.
+
+## V15
+Acceso privado de administrador fuera de horario. Consulta ACTIVAR_V15.md. Los jugadores normales mantienen las reglas V14.
