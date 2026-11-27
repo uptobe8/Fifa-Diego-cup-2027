@@ -43,3 +43,6 @@ Acceso obligatorio mediante Google, ficha individual, nombre editable, contrase�
 
 ## V15
 Acceso privado de administrador fuera de horario. Consulta ACTIVAR_V15.md. Los jugadores normales mantienen las reglas V14.
+
+## V18
+Panel privado de horarios, con confirmación de contraseña, dos franjas diarias, restauración y contador en horario de Madrid. Consultar HORARIOS_V18.md para alcance local y opcional sincronización remota.
