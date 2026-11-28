@@ -1,1 +1,0 @@
-V17: acceso privado compatible con contextos sin crypto.subtle mediante PBKDF2-HMAC-SHA256 (310000 iteraciones). Se conserva la clave inicial y el registro de credenciales V16. Requiere getRandomValues y almacenamiento local persistente. El visor Archivos puede imponer restricciones adicionales, incluido WebGL. Acceso local no es seguridad global. Google requiere Supabase.
